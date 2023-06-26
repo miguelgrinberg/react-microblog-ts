@@ -9,7 +9,7 @@ export default function FlashMessage() {
   return (
     <Collapse in={visible}>
       <div>
-        <Alert variant={flashMessage.type || 'info'} dismissible
+        <Alert variant={flashMessage.type || 'info'} show={true} dismissible
           onClose={hideFlash} data-visible={visible}>
           {flashMessage.message}
         </Alert>
