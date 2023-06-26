@@ -10,10 +10,6 @@ type Options<TREQ> = {
   headers?: Headers;
   body?: TREQ;
 }
-
-type ValidationError = {
-  json: any;
-}
   
 type Response<TRES> = {
   ok: boolean;

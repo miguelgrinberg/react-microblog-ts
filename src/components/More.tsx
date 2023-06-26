@@ -1,4 +1,3 @@
-import { type } from 'os';
 import Button from 'react-bootstrap/Button';
 import { Pagination } from '../Schemas';
 
