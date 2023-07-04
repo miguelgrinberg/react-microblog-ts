@@ -24,7 +24,7 @@ function getTimeAgo(date: Date): TimeAgoType {
     if (absSeconds >= unitSeconds) {
       bestUnit = unit;
       bestTime = Math.round(seconds / unitSeconds);
-      bestInterval = unitSeconds / 2;
+      bestInterval = Math.min(unitSeconds / 2, 60 * 60 * 24);
       break;
     }
   };
