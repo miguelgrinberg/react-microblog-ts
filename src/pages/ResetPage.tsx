@@ -13,7 +13,7 @@ type FormErrorsType = {
     password2?: string;
 }
 
-export default function EditUserPage() {
+export default function ResetPage() {
   const [formErrors, setFormErrors] = useState<FormErrorsType>({});
   const passwordField = useRef<HTMLInputElement>(null);
   const password2Field = useRef<HTMLInputElement>(null);
